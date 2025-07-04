@@ -1,6 +1,5 @@
 
 import React, { useState } from 'react';
-import Header from '../components/Header';
 import BottomNavigation from '../components/BottomNavigation';
 import RecipeCard from '../components/RecipeCard';
 import { useNavigate } from 'react-router-dom';
@@ -69,11 +68,6 @@ const RecipeResults: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col">
-      <Header 
-        title="2. Recipe Results..." 
-        showBack 
-        onBack={() => navigate('/')} 
-      />
       
       <main className="flex-1 px-4 py-6 pb-24">
         <h1 className="text-xl font-bold text-gray-900 mb-6">

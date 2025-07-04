@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import Header from '../components/Header';
+
 import BottomNavigation from '../components/BottomNavigation';
 import { Camera, User } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
@@ -23,11 +23,7 @@ const Profile: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col">
-      <Header 
-        title="3. Profile.pdf" 
-        showBack 
-        onBack={() => navigate('/')} 
-      />
+      
       
       <main className="flex-1 px-4 py-6 pb-24">
         <div className="max-w-md mx-auto">
